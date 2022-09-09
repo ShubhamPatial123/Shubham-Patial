@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>welcome to SHUBHAM</title>
+</head>
+
+<body>
+<style>
+    
+  
+</style>
+<script>
+
+</script>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="profile">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact">contact us</a>
+          </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>welcome to my page</title>
+</head>
+<body>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+
+
+
+    <link rel="icon" href="Favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <title>Resistation form</title>
+</head>
+<body>
+    </div>
+    </div>
+</nav>
+
+<main class="my-form">
+    <div class="cotainer">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">REGISTATION FORM</div>
+                        <div class="card-body">
+                            <form action="run" method="post">
+                                {% csrf_token %}
+                                <div class="form-group row">
+                                    <label for="id" class="col-md-4 col-form-label text-md-right">id</label>
+                                    <div class="col-md-6">
+                                        <input type="number" id="id" class="form-control" name="id" placeholder="id">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="full_name" class="col-md-4 col-form-label text-md-right">name</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="name" class="form-control" name="name" placeholder="name">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="email_address" class="col-md-4 col-form-label text-md-right">age</label>
+                                    <div class="col-md-6">
+                                        <input type="number" id="age" class="form-control" name="age" placeholder="age">
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group row">
+                                    <label for="phone_number" class="col-md-4 col-form-label text-md-right">phone</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="phone" class="form-control" name="phone"  placeholder="phone">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="present_address" class="col-md-4 col-form-label text-md-right">address</label>
+                                    <div class="col-md-6">
+                                        <textarea type="text" id="address" name="address" class="form-control" placeholder="address"></textarea>
+                                    </div>
+                                </div>
+                                </div>
+
+                                    <div class="col-md-6 offset-md-4">
+                                        <button type="submit"  style = "margin-left: 170px" style='color: rgb(244, 237, 237)';>submit</button>
+
+                                        <button type="submit"  style = "margin-left: 4=50px" style='color: rgb(244, 237, 237)';><a href="{% url 'show' %}">show</a></button>
+                                   
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
